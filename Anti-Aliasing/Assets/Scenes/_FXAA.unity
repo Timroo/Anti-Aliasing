@@ -2591,7 +2591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c13ae6727e01f646bcc0c1b181e2e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 0
+  mode: 1
   contrastThreshold: 0.0526
   relativeThreshold: 0.125
   fxaaShader: {fileID: 4800000, guid: 8d49a7fec3fe38247a7ced8d87a94e35, type: 3}

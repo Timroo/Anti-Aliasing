@@ -60,16 +60,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Users\27700\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="E:\Unity-Projects\Github_repo\Anti-Aliasing\Anti-Aliasing\Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\unityplastic.dll" />
-    <Analyzer Include="E:\Unity-Projects\Github_repo\Anti-Aliasing\Anti-Aliasing\Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll" />
-    <Analyzer Include="E:\Unity-Projects\Github_repo\Anti-Aliasing\Anti-Aliasing\Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\log4netPlastic.dll" />
-    <Analyzer Include="E:\Unity-Projects\Github_repo\Anti-Aliasing\Anti-Aliasing\Library\PackageCache\com.unity.collab-proxy@2.7.1\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll" />
     <Analyzer Include="D:\Program Files\Unity\Hub\Editor\2022.3.40f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Program Files\Unity\Hub\Editor\2022.3.40f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\_SSAA.cs" />
     <Compile Include="Assets\Scripts\_TAA.cs" />
+    <Compile Include="Assets\Scripts\_SMAA.cs" />
     <Compile Include="Assets\Scripts\_MSAA.cs" />
     <Compile Include="Assets\Scripts\_FXAA.cs" />
   </ItemGroup>
@@ -77,16 +74,17 @@
     <None Include="Assets\Shaders\xRLib.hlsl" />
     <None Include="Assets\Shaders\API\PSSL.hlsl" />
     <None Include="Assets\Shaders\Sampling.hlsl" />
+    <None Include="Assets\Shaders\_SMAA.shader" />
     <None Include="Assets\Shaders\ACES.hlsl" />
     <None Include="Assets\Shaders\API\D3D11.hlsl" />
-    <None Include="Assets\Shaders\TAA\_TAA.shader" />
+    <None Include="Assets\Shaders\_TAA.shader" />
     <None Include="Assets\Shaders\API\D3D9.hlsl" />
     <None Include="Assets\Shaders\API\Switch.hlsl" />
     <None Include="Assets\Shaders\API\Metal.hlsl" />
     <None Include="Assets\Shaders\Colors.hlsl" />
     <None Include="Assets\Shaders\API\PSP2.hlsl" />
     <None Include="Assets\Shaders\API\OpenGL.hlsl" />
-    <None Include="Assets\Shaders\FXAA\_FXAA.shader" />
+    <None Include="Assets\Shaders\_FXAA.shader" />
     <None Include="Assets\Shaders\API\XboxOne.hlsl" />
     <None Include="Assets\Shaders\API\D3D12.hlsl" />
     <None Include="Assets\Shaders\API\Vulkan.hlsl" />
