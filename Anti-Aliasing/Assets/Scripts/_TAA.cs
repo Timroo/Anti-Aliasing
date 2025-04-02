@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[ExecuteInEditMode]
+[ExecuteInEditMode,ImageEffectAllowedInSceneView]
 public class _TAA : MonoBehaviour
 {
     // 实现TAA的Shader

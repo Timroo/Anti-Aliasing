@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\_SSAA.cs" />
+    <Compile Include="Assets\Scripts\CameraLookAround.cs" />
     <Compile Include="Assets\Scripts\_TAA.cs" />
     <Compile Include="Assets\Scripts\_SMAA.cs" />
     <Compile Include="Assets\Scripts\_MSAA.cs" />

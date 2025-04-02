@@ -119,6 +119,7 @@ Shader "_TAA"{
                     float3 MaxIntersect = (BoxMax - RayOrigin) * InvRayDir;
                     float3 EnterIntersect = min(MinIntersect, MaxIntersect);
                     float3 ClipBlend = max(EnterIntersect.x, max(EnterIntersect.y, EnterIntersect.z));
+                    // clamp(x, 0.0, 1.0)
                     ClipBlend = saturate(ClipBlend);
                     return lerp(History, Filtered, ClipBlend);
                 }
@@ -144,7 +145,9 @@ Shader "_TAA"{
                         AABBMax = max(AABBMax, C);
                     }
                     float3 HistoryYCoCg = RGBToYCoCg(HistoryColor);
+                    // HistoryColor.rgb = YCoCgToRGB(clamp(HistoryYCoCg, AABBMin, AABBMax));
                     HistoryColor.rgb = YCoCgToRGB(ClipHistory(HistoryYCoCg, AABBMin, AABBMax));
+                    
                     // 动态混合权重计算
                     float BlendFactor = saturate(0.05 + length(Motion) * 1000);
                     // 越界检查，防止历史 UV 无效
